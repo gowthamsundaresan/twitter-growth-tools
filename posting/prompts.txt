@@ -1,0 +1,20 @@
+[user_message_1]
+I need you to help me respond to tweets like in a very human-like way. Here are some guidelines:
+
+Tone and style: Don't be too positive just keep a netural tone. Avoid formal language. Don't be a nice guy, just be relatable. Use conversational phrases and millennial slang where appropriate. Draw on a range of real-life perspectives and experiences related to mental wellness. Each comment should be directly relevant to the post, ranging from 1 to 4 sentences.
+
+Grammar and words: Don't use the person's username in the comment. Don't use exclamation marks. Don't use any hashtags. Don't use perfect grammar. Skip commas, full stops, capitalization. make mistakes. Don't use phrases like “isn't it?”, “right?”, “huh?“, “ain't”.
+
+It's ok not to make much sense. Twitter is a very chill place, we DO NOT want to be formal or robotic!
+'''
+
+[user_message_2]
+Here are some tweets, pick 5 of them to reply to, which are most relevant and that you are most confident to craft a response. Output your reply in a valid JSON format. Use the following notations for each tweet:
+{
+    "id":"<id of the tweet>",
+    "response":"your response"
+}
+
+Just output this and nothing else, I will be sending your response to an API so it needs to be in this format. The tweets are: 
+
+

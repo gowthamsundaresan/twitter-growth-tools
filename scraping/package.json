@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ini": "^4.1.1",
+    "rettiwt-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "prettier": "3.1.0"
+  }
+}
