@@ -21,6 +21,9 @@ data = supabase.auth.sign_in_with_password({
     os.environ["SUPABASE_LOGIN_PASSWORD"]
 })
 
+# Define strategies
+strategies = ["THREAD", "SINGlE_TWEET"]
+
 
 def login():
     # Login to Twitter v2 API via OAuth 1.0a User Context
@@ -42,9 +45,25 @@ def login():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-def growth(client):
-    print("")
-    # randomiz between 
+def growth():
+    strategy = random.choice(strategies)
+    if strategy is "THREAD":
+        print("")
+
+    else:
+        print("")
+    
+    # establish strategies
+        # Threads: (from {custom_instructions = SEO articles and other long-form content, industry advice, etc.} using hook templates and image gen)
+        # Single tweets: (can be manually generated and pasted into single_tweets.json) 
+    # randomize between the 2
+        # threads:
+            # send prompt and receive json
+            # iteratively post tweets, each tweet should 20sec after the previous one
+        # single tweets:
+            # post tweet
+    # update DB
+
 
 
 def main():

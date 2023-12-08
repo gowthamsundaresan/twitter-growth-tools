@@ -60,7 +60,7 @@ def growth(client):
                         print(f"Replied to tweet with id:{id}: {reply}")
 
                         # Update Twitter Actions table in Supabase 
-                        update_table = supabase.table('Twitter Actions').insert({'response_to_id': id, 'text': response['data']['text'], 'action': 'reply'}).execute()
+                        insert_table = supabase.table('Twitter Actions').insert({'response_to_id': id, 'text': response['data']['text'], 'action': 'reply'}).execute()
                         print(f"Twitter Actions table updated")
 
                         total_actions += 1
