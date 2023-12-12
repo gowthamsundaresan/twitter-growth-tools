@@ -1,1 +1,7 @@
 .env
+scraping/images/*
+scraping/outputs/*
+scraping/scrapes/*
+accounts.txt
+session.json
+testing.py
