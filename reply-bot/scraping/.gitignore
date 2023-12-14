@@ -1,3 +1,4 @@
 .env
 .prettierrc
 node_modules
+config.ini
